@@ -1,8 +1,13 @@
+let index = 0
 basic.forever(function () {
-    basic.showString("CO2" + SCD40.get_co2())
-    basic.pause(100)
-    basic.showString("Temperatur" + SCD40.get_temperature(SCD40.SCD40_T_UNIT.C))
-    basic.pause(100)
-    basic.showString("Luftfeuchtigkeit" + SCD40.get_relative_humidity())
-    basic.pause(100)
+    index += 1
+    datalogger.includeTimestamp(FlashLogTimeStampFormat.None)
+    datalogger.log(
+    datalogger.createCV("index", index),
+    datalogger.createCV("CO2", SCD40.get_co2()),
+    datalogger.createCV("Temperatur", SCD40.get_temperature(SCD40.SCD40_T_UNIT.C)),
+    datalogger.createCV("Luftfeuchtigkeit", SCD40.get_relative_humidity())
+    )
+    datalogger.mirrorToSerial(true)
+    basic.pause(5000)
 })
