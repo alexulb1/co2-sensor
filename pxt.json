@@ -1,0 +1,30 @@
+{
+    "name": "CO2-Sensor",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "co2-sensor-scd40": "github:calliope-edu/co2-sensor-scd40#b1ded8869673a6e504fe82cbffae0a1f7e6e650a",
+        "funk": "*",
+        "v3": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v3.0.33",
+        "tag": "v3.0.33",
+        "commits": "https://github.com/microsoft/pxt-calliope/commits/3742cc45f2721da346c8f20d3634ddd20487fcf9",
+        "target": "6.0.42",
+        "pxt": "6.0.23",
+        "targetId": "calliopemini"
+    },
+    "supportedTargets": [
+        "calliopemini"
+    ],
+    "preferredEditor": "blocksprj"
+}
