@@ -6,7 +6,8 @@
         "co2-sensor-scd40": "github:calliope-edu/co2-sensor-scd40#b1ded8869673a6e504fe82cbffae0a1f7e6e650a",
         "funk": "*",
         "v3": "*",
-        "datalogger": "*"
+        "datalogger": "*",
+        "Grove": "github:calliope-edu/pxt-grove#v0.9.2"
     },
     "files": [
         "main.blocks",
